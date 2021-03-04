@@ -11,7 +11,8 @@
     {{ if .Site.IsServer }}
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
     {{ else }}
-        {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+        {{ $styles := $styles | minify | fingerprint }}
+        <!-- {{ $styles := $styles | minify | fingerprint | resources.PostProcess }} -->
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"/>
     {{ end }}
 

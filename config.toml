@@ -4,9 +4,9 @@ theme = "exampleTheme"
 title = "Fredriks häftiga titel"
 
 [[menu.main]]
-name = "test"
-pre = "test"
-url = "/a/"
+name = "About"
+pre = "about"
+url = "/about/"
 weight = 5
 [[menu.main]]
 name = "Contact"
@@ -30,7 +30,7 @@ url = "/"
 weight = 1
 
 [params]
-testtext = "min lilla text"
+testtext = "min lilla testtext"
 
 [params.test]
 testtext = "testTeXTTTT"

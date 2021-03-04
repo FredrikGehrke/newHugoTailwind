@@ -4,7 +4,7 @@
     src: url(../fonts/Norican/Norican-Regular.ttf) format("truetype");
 }
 
-.container {
+/* .container {
     max-width: 800px;
 }
 
@@ -24,7 +24,7 @@
 }
 
 #home-jumbotron {
-    /* background-color: grey; */
+    
 }
 
 h1.title {
@@ -67,4 +67,4 @@ a.summary:link, a.summary:visited, a.summary:hover, a.summary:active {
 
 .footer {
     color: darkgrey;
-}
+} */

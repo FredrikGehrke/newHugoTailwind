@@ -1,14 +1,14 @@
-<section class="container page">
-    <article>
+<section class="page bg-gray-50">
+    <article class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <header>
-        <h1 class="title">
+        <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             <a class="title-link" href="{{ .Permalink | safeURL }}">
-            {{ .Title }}
+                {{ .Title }}
             </a>
-        </h1>
+        </h2>
         </header>
 
         {{ .Content }}
+
     </article>
 </section>
-    <!-- TEST PAGE, not working -->
