@@ -1,0 +1,10 @@
+---
+label: Fredriks posts
+hide_body: false
+fields:
+- name: fredriks_label
+  type: text
+  config:
+    required: false
+  label: Fredriks label
+  description: Hjehejeheje
