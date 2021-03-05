@@ -4,6 +4,11 @@ theme = "exampleTheme"
 title = "Fredriks häftiga titel"
 
 [[menu.main]]
+name = "Feedback"
+pre = "feedback"
+url = "/feedback/"
+weight = 6
+[[menu.main]]
 name = "About"
 pre = "about"
 url = "/about/"
