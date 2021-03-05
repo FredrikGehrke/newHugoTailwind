@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 fredriks_label = "Ny label"
 title = "Tredje post (Redigerad från Forestry)"
 
