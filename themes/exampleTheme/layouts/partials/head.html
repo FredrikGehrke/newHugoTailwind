@@ -6,12 +6,11 @@
     <!-- <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"> -->
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 
-    {{ $styles := resources.Get "css/main.css" | postCSS }}
+    {{ $styles := resources.Get "css/main.css" | postCSS | minify | fingerprint }}
 
     {{ if .Site.IsServer }}
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
     {{ else }}
-        {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"/>
     {{ end }}
 
