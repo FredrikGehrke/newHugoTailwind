@@ -14,7 +14,7 @@
 
 </div> -->
 
-<div class="relative pt-6 px-4 sm:px-6 lg:px-8 pb-6">
+<div class="relative pt-4 pb-4 px-4 sm:px-6 lg:px-8 bg-gray-800">
     <nav class="relative flex items-center justify-between sm:h-10 " aria-label="Global">
         <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
         <div class="flex items-center justify-between w-full md:w-auto">
@@ -34,13 +34,9 @@
         </div>
         <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
             {{ range .Site.Menus.main }}
-            <a class="font-medium text-black hover:text-gray-900" href="{{ .URL }}">
-            {{ if .Pre }}
-            <!-- {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
-            {{ $icon }} -->
-            {{ end }}
-            {{ $text := print .Name | safeHTML }}
-            {{ $text }}
+            <a class="font-medium text-white transform hover:scale-110 motion-reduce:transform-none duration-300" href="{{ .URL }}">
+                {{ $text := print .Name | safeHTML }}
+                {{ $text }}
             </a>
             {{ end }}
         </div>
