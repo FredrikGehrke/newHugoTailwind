@@ -4,8 +4,19 @@
     src: url(../fonts/Norican/Norican-Regular.ttf) format("truetype");
 }
 
+.theme-color {
+    color: rgba(59, 130, 246, 0.5) !important;
+}
+.theme-bg {
+    background-color: rgba(59, 131, 246, 0.986) !important;
+}
+
 .container {
-    max-width: 800px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #nav a {

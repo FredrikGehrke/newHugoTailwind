@@ -35,7 +35,9 @@ url = "/"
 weight = 1
 
 [params]
-testtext = "min lilla testtext"
+Slogan = "Webbyrå med fokus på"
+Magento = "Magento"
+WooCommerce = "WooCommerce"
 
 [params.test]
 testtext = "testTeXTTTT"

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ .Language.Lang }}">
     {{- partial "head.html" . -}}
-    <body>
+    <body class="flex flex-col min-h-screen">
         {{- partial "header.html" . -}}
-        <div id="content">
+        <div id="content" class="flex-grow">
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
         {{- partial "script.html" . -}}
     </body>
 </html>
+
+<!-- Made so the footer always sticks to the bottom -->
