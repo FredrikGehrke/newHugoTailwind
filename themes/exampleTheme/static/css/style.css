@@ -1,7 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap");
+/* font-family: "Rubik", sans-serif; */
+
 @font-face {
     font-family: 'Norican';
     src: url(../fonts/Norican/Norican-Regular.otf);
     src: url(../fonts/Norican/Norican-Regular.ttf) format("truetype");
+}
+
+/* @media (min-width: 1024px) {
+    .top-navbar {
+      display: -webkit-inline-box !important;
+      display: -ms-inline-flexbox !important;
+      display: inline-flex !important;
+    }
+  } */
+
+  /* @media (min-width: 1024px) {
+    .top-navbar {
+      display: inline-flex !important;
+    }
+  } */
+
+#menu {
+    font-family: "Rubik", sans-serif;
 }
 
 .theme-color {
