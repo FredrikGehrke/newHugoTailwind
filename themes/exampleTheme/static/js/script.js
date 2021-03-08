@@ -1,7 +1,11 @@
 const navToggler = document.querySelector('#navToggler')
 const menu = document.querySelector('#menu')
 
-menu.classList.remove('hidden')
+if(window.innerWidth > 1023) {
+    menu.classList.remove('hidden')
+} else {
+    menu.classList.add('hidden')
+}
 
 // Mobil: 
 navToggler.addEventListener('click', ()=>{
@@ -20,6 +24,38 @@ window.addEventListener('resize', () =>{
         menu.classList.add('hidden')
     }
 })
+
+
+
+
+// const navToggler = document.querySelector('#navToggler')
+// const menu = document.querySelector('#menu')
+
+// // menu.classList.remove('hidden')
+// if(window.innerWidth > 1023) {
+//     menu.classList.remove('hidden')
+// } else {
+//     menu.classList.add('hidden')
+// }
+
+// // Mobil: 
+// navToggler.addEventListener('click', ()=>{
+//     if(menu.classList.contains('hidden') && window.innerWidth < 1023){
+//         menu.classList.remove('hidden')
+//     } else{
+//         menu.classList.add('hidden')
+//     }
+// });
+
+// // Stor skärm:
+// window.addEventListener('resize', () =>{
+//     if(window.innerWidth > 1023){
+//         menu.classList.remove('hidden')
+//     } else {
+//         menu.classList.add('hidden')
+//     }
+// })
+
 
 
 // $(document).ready(function () {
