@@ -3,8 +3,8 @@
         <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg rounded">
             <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
                 <div class="w-full sm:px-4 relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-                <a class="text-xl font-bold leading-relaxed inline-block mb-1 py-2 whitespace-no-wrap uppercase text-green-600" href="#pablo">
-                    MS
+                <a class="text-xl font-bold leading-relaxed inline-block mb-1 whitespace-no-wrap uppercase text-green-600" href="/">
+                    <i class="fab fa-asymmetrik fa-2x hover:text-white"></i>
                 </a>
                 <button type="button" id="navToggler" class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-green-600 text-white block lg:hidden outline-none focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
@@ -20,7 +20,7 @@
                     <ul class="flex flex-col lg:flex-row list-none ">
                         {{ range .Site.Menus.main }}
                         <li class="nav-item py-2 lg:py-0" id="menu-li">
-                            <a href="{{ .URL }}" class="lg:inline-flex lg:w-auto w-full sm:px-3 py-2 rounded text-gray-100 items-center justify-center hover:bg-gray-900 hover:text-white">
+                            <a href="{{ .URL }}" class="lg:inline-flex lg:w-auto w-full sm:px-3 py-2 rounded text-gray-100 items-center justify-center hover:bg-gray-900 hover:text-green-500">
                                 {{ if .Pre }}
                                 {{ end }}
                                 {{ $text := print .Name | safeHTML }}
