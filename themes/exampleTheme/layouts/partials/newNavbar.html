@@ -1,0 +1,46 @@
+<div class="bg-gray-800">
+    <div class="max-w-7xl mx-auto ">
+        <nav class="relative flex flex-wrap items-center px-2 py-3 navbar-expand-lg rounded">
+            <div x-data="{ isOpen: false }" class="container px-4 mx-auto flex flex-wrap items-center ">
+                <div class="w-full md:w-12 sm:px-4 relative flex lg:w-auto lg:static lg:block lg:justify-start justify-between">
+                    <a class="text-xl font-bold leading-relaxed inline-block mb-1 whitespace-no-wrap uppercase text-green-600" href="/">
+                        <i class="fab fa-asymmetrik fa-2x hover:text-white"></i>
+                    </a>
+                    <div class="flex md:hidden">
+                        <button type="button" @click="isOpen = !isOpen" class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-green-600 text-white block lg:hidden outline-none focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                            <svg  class="h-8 lg:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </svg>
+                        </button>
+                    </div>
+                </div>
+                <div :class="isOpen ? 'show' : 'hidden'"  class="md:flex md:block mt-4 md:mt-0">
+                    <ul class="flex flex-col md:flex-row md:ml-6">
+                        {{ range .Site.Menus.main }}
+                        <li class="nav-item py-2 lg:py-0 px-4 md:px-0">
+                            <a href="{{ .URL }}" class="my-1 text-sm text-gray-100 font-medium hover:text-green-600 md:mx-4 md:my-0">
+                                {{ if .Pre }}
+                                {{ end }}
+                                {{ $text := print .Name | safeHTML }}
+                                {{ $text }}
+                            </a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+                <div class="ml-auto hidden md:flex">
+                    <button class="bg-gray-800 text-green-600 p-1 rounded-full text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                        </svg>
+                    </button>
+                    <button class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu" aria-haspopup="true">
+                        <i class="fas fa-user fa-2x text-green-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"></i>
+                    </button> 
+                </div>               
+            </div>
+        </nav>
+    </div>
+</div>
